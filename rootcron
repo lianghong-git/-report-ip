@@ -1,0 +1,2 @@
+# check ip hourly
+0 */1 * * * /root/rootcrons/updateip.sh
