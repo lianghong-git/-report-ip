@@ -5,3 +5,5 @@ source REPORTIP.ini
 touch  $PREFIX/rootcron
 echo "$IP_Check_Freq" >> $PREFIX/rootcron
 crontab $PREFIX/rootcron
+
+exit 0
