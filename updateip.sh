@@ -5,7 +5,7 @@
 #使用curl命令通过网站ip.cn获取本机外网命令
 IPADDRESS="$(curl ip.cn | sed -e 's/^.*P：//' -e 's/.来自.*通//')"
 #以下是其他几种获取ip的方式
-#IPADDRESS='wget http://ipecho.net/plain -O - -q;echo'
+#IPADDRESS=`wget http://ipecho.net/plain -O - -q;echo`
 
 #清空日志条目,防止日志文件一直增加
 sed -i '1,$d' /root/rootcrons/updateip.log
