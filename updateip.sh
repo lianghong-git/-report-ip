@@ -2,8 +2,6 @@
 #if [[ -n "$(curl ifconfig.me)" ]];then
 #      IPADDRESS="$(curl ifconfig.me)"
 #fi
-#设置安装目录,可以根据需要设置安装目录
-PREFIX=/root/rootcrons
 
 #使用curl命令通过网站ip.cn获取本机外网命令
 IPADDRESS="$(curl ip.cn | sed -e 's/^.*P：//' -e 's/.来自.*通//')"
