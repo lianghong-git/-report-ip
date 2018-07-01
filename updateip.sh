@@ -2,7 +2,9 @@
 #if [[ -n "$(curl ifconfig.me)" ]];then
 #      IPADDRESS="$(curl ifconfig.me)"
 #fi
+#使用curl命令通过网站ip.cn获取本机外网命令
 IPADDRESS="$(curl ip.cn | sed -e 's/^.*P：//' -e 's/.来自.*通//')"
+#清空日志条目,防止日志文件一直增加
 sed -i '1,$d' /root/rootcrons/updateip.log
 #IPADDRESS='wget http://ipecho.net/plain -O - -q;echo'
 echo "Last check at: $(date)" >> /root/rootcrons/updateip.log
