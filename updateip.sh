@@ -1,4 +1,6 @@
 #!/bin/bash
+source ./REPORTIP.ini
+
 #if [[ -n "$(curl ifconfig.me)" ]];then
 #      IPADDRESS="$(curl ifconfig.me)"
 #fi
