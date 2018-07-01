@@ -19,5 +19,7 @@ if [[ "${IPADDRESS}" != "$(cat /root/rootcrons/.current_ip)" ]];then
       echo "Failed to send the mail, try again later." >> /root/rootcrons/updateip.log
     fi
 fi
+
+exit 0
 #echo ${IPADDRESS} | mutt -s \[RPI\]"IP CHANGED" 55701240@qq.com
 #echo "hello world" | mutt -s "title" 55701240@qq.com
