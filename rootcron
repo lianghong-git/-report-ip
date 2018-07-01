@@ -1,4 +1,3 @@
 # check ip hourly
 #设置检测ip变化的频率
 #min hour dom month dow command
-0 */1 * * * /root/rootcrons/updateip.sh

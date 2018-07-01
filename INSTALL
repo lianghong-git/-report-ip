@@ -2,7 +2,7 @@
 source REPORTIP.ini
 #将rootcron的任务添加到crontab列表
 
-touch  $PREFIX/rootcron
+#touch  $PREFIX/rootcron
 echo "$IP_Check_Freq" >> $PREFIX/rootcron
 crontab $PREFIX/rootcron
 
